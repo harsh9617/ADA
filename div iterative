@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+void div(int x,int y)
+{int count=0;
+while(x>y)
+{
+x=x-y;
+count++;	
+}
+cout<<"q="<<count;
+cout<<"r="<<x;
+}
+int main()
+{int a,b;
+ cin>>a>>b;
+ div(a,b);
+ return 0;
+}
