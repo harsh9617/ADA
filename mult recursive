@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int mult(int x,int y)
+{if(y==1)
+return x;
+return x+mult(x,y-1);
+}
+int main()
+{int a,b;
+ cin>>a>>b;
+ cout<<mult(a,b);
+ return 0;
+}
